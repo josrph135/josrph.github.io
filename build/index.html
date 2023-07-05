@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
 </head>
 <body class="font-roboto mt-4" style="background-image: url(./image/background\ \(1\).jpg); background-repeat: no-repeat; background-size: cover; background-position: center; background-color: black;">
@@ -26,17 +26,43 @@
             <a class="hover:text-orange-600" href="#">contact</a>
         </div>
 
-        <div class="flex">
+        <div class="hidden lg:flex">
             <div class="relative">
                 <input type="text" name="" id="" class="border placeholder:text-orange-600 w-36 md:w-full cursor-pointer  border-orange-600 rounded-l-lg py-2 pl-10 text-white bg-inherit outline-none" placeholder="Search">
-                <span class="absolute top-2 left-3 text-orange-600"><i class="fas fa-search"></i></span>
+                <span class="absolute top-2 left-3 text-orange-600"><i class="fa fa-search"></i></span>
             </div>
             <a href="#" class="border border-orange-600 bg-orange-600 text-white hover:bg-transparent hover:text-orange-600 transition px-4 text-base lg:text-lg flex justify-center items-center font-semibold rounded-r-md">Search</a>
         </div>
-    </header>
 
+        <div class="text-3xl lg:hidden hover:text-opacity-75 relative text-orange-600" id="menuBar">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+        <div class="lg:hidden flex pt-8 pl-4">
+            <div class="relative">
+                <input type="text" name="" id="" class="border placeholder:text-orange-600 w-36 md:w-full cursor-pointer  border-orange-600 rounded-l-lg py-2 pl-10 text-white bg-inherit outline-none" placeholder="Search">
+                <span class="absolute top-2 left-3 text-orange-600"><i class="fa fa-search"></i></span>
+            </div>
+            <a href="#" class="border border-orange-600 bg-orange-600 text-white hover:bg-transparent hover:text-orange-600 transition px-4 text-base lg:text-lg flex justify-center items-center font-semibold rounded-r-md">Search</a>
+        </div>
+
+        <div class="hidden bg-black bg-opacity-30 absolute top-0 z=40 left-0 h-full w-full" id="dropdown">
+            <div class=" pl-8 bg-orange-600  w-72 h-full pt-4 capitalize font-semibold text-lg text-white">
+                <div class="absolute right-52 top-8 z-40 focus:text-orange-950"><i class="fa fa-times" id="closedown"></i></div>
+                <div class="flex divide-y divide-dotted divide-gray-200 flex-col">
+                    <a class="py-2 text-2xl" href="index.html">home</a>
+                    <a class="py-2 text-2xl" href="#">about</a>
+                    <a class="py-2 text-2xl" href="#">services</a>
+                   <a class="py-2 text-2xl" href="#">design</a>
+                   <a class="py-2 text-2xl" href="#">contact</a>
+                </div>
+               
+            </div>
+        </div>
     <main class="md:grid px-4 flex lg:px-8 flex-col space-y-6 md:grid-cols-10 mt-20 mb-8">
-        <div class="col-span-7 pt-20">
+        
+        <div class="col-span-7 pt-8">
+           
             <h2 class="capitalize text-5xl font-bold text-white">web design & <br> <span class="text-orange-600">development </span><br>
             course</h2>
             <p class="pt-4 pb-6 text-lg text-orange-600 font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas iusto incidunt inventore eum laboriosam ipsum atque veritatis ratione assumenda magni possimus minus, placeat quidem? Deserunt quisquam at quis delectus repellendus.</p>
@@ -44,7 +70,7 @@
             <button class="text-center bg-orange-600 text-white border border-orange-600 py-2 px-8 hover:bg-transparent hover:text-orange-600 transition rounded-lg">JOIN US</button>
         </div>
 
-        <div class="md:col-span-3 md:h-full bg-black bg-opacity-70 rounded-lg px-6 pt-4 pb-2">
+        <div class="md:col-span-3 flex flex-col md:h-full bg-black bg-opacity-70 rounded-lg px-6 pt-4 pb-2">
             <div class="bg-white text-center rounded text-xl text-orange-600 py-1 w-full">
                 Login Here
             </div>

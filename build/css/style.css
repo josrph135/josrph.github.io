@@ -614,6 +614,15 @@ video {
   height: 0.75rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .w-3 {
   width: 0.75rem;
 }
